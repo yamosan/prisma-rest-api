@@ -7,6 +7,7 @@
     "dev": "nodemon --watch './src/**/*.ts' --exec ts-node --files ./src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "test": "NODE_ENV=test jest",
     "check-types": "tsc --noEmit",
     "lint": "run-p -l -c --aggregate-output lint:*",
     "lint:eslint": "eslint src/**/*.ts",
