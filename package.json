@@ -13,7 +13,11 @@
     "lint:prettier": "prettier --check .",
     "fix": "run-s -l -c fix:eslint fix:prettier",
     "fix:eslint": "eslint --fix src/**/*.ts",
-    "fix:prettier": "prettier --write ."
+    "fix:prettier": "prettier --write .",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "prisma db seed --preview-feature",
+    "prisma:dev": "run-s -l prisma:generate prisma:migrate prisma:seed"
   },
   "keywords": [],
   "author": "",
