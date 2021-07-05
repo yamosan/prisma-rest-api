@@ -2,7 +2,7 @@
 
 ## セットアップ
 ```shell
-echo 'DATABASE_URL="postgresql://postgres@localhost:5433/prisma-express-rest"' > .env
+echo 'DATABASE_URL="postgresql://postgres:password@localhost:5433/prisma-rest-api"' > .env
 
 docker-compose up -d
 
